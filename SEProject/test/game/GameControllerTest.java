@@ -38,7 +38,7 @@ class GameControllerTest {
         GameController gameController = GameController.initGame(true);
         gameController.getHound().stream().
                 map(a -> a.getFieldModel().getRow()).sorted().forEach(a -> {
-                    assert a == 7;
+            assert a == 7;
         } );
     }
 
