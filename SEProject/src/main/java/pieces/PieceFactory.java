@@ -15,6 +15,12 @@ public class PieceFactory {
         this.chessboardModel = chessboardModel;
         this.chessboardView = chessboardView;
     }
+
+    /**
+     * This list places the pieces to their starting place
+     * @param playerControlsHound determines if the piece which awaits for placing are fox or hound.
+     * @return the starting position of the board.
+     */
     public List<PieceModel> placePieces(boolean playerControlsHound) {
         List<PieceModel> result = new ArrayList<>();
         PieceModel foxModel = new FoxModel(chessboardModel);

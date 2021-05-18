@@ -1,3 +1,7 @@
-package pieces;
+/**
+ * This package contains classes, which represent the pieces (including their creation)
+ * and describes their move possibilities.
+ * @author Ferenc Bodnar
+ */
 
-//This package contains classes, which represent the pieces and describes their move possibilities.
+package pieces;
