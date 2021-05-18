@@ -1,3 +1,7 @@
+/**
+ * This class is the visual representation of a tile
+ */
+
 package board;
 
 import org.tinylog.Logger;
@@ -13,6 +17,12 @@ public class FieldView {
     private PieceView pieceView;
     private FieldController fieldController;
 
+    /**
+     * Determines if a field playable or not
+     * @param fieldModel
+     * @param chessboardView
+     * @param chessboardModel
+     */
     FieldView(FieldModel fieldModel, ChessboardView chessboardView, ChessboardModel chessboardModel) {
         this.fieldModel = fieldModel;
         this.fieldController = new FieldController(chessboardModel, chessboardView);

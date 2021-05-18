@@ -1,3 +1,7 @@
-package board;
+/**
+ * This package is the soul of our program, we have the classes here, which create the board, the pieces,
+ * and the possible moves.
+ * @author Ferenc Bodnár
+ */
 
-//This package contains the classes, which we use represent the board, tiles, as well as the valid moves.
+package board;

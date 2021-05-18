@@ -1,3 +1,6 @@
+/**
+ * This class describes the board
+ */
 package board;
 
 import game.Game;

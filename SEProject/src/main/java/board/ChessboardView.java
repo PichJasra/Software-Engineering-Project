@@ -1,3 +1,6 @@
+/**
+ * This class is the visual representation of the board
+ */
 package board;
 
 import game.PieceMovedObserver;
@@ -22,9 +25,13 @@ public class ChessboardView {
     final static Color playable = Color.valueOf("#383838");
     final static Color prompt = Color.valueOf("#6B83DD");
     final static Color selected = Color.valueOf("#908F09");
-    public final static Color foxColor = Color.valueOf("#9C2D2A");
-    public final static Color houndColor = Color.valueOf("#B19868");
+    public final static Color foxColor = Color.valueOf("#FFFFFF");
+    public final static Color houndColor = Color.valueOf("#000000");
 
+    /**
+     * Gets us the fields
+     * @param chessboardModel
+     */
     public ChessboardView(ChessboardModel chessboardModel) {
         this.size = ChessboardModel.size;
         chessboard = new FieldView[size][size];

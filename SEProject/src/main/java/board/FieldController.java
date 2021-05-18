@@ -1,3 +1,7 @@
+/**
+ * This class answers for the selection and deselection of the fields, and moving of the pieces.
+ */
+
 package board;
 
 import pieces.PieceView;

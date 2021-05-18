@@ -1,4 +1,6 @@
-
+/**
+ * This class represents a tile
+ */
 package board;
 
 import pieces.PieceModel;
