@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: game.GameControllerTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.563 s <<< FAILURE! - in game.GameControllerTest
-undoLastMove  Time elapsed: 0.016 s  <<< ERROR!
-java.lang.NullPointerException: Cannot invoke "pieces.PieceView.move(board.FieldModel)" because "foxView" is null
-	at game.GameControllerTest.undoLastMove(GameControllerTest.java:27)
-
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.174 s - in game.GameControllerTest

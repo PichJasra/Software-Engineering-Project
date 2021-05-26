@@ -1,3 +1,6 @@
+game\GameController.class
+gui\NameScene.class
+pieces\PieceFactory.class
 pieces\HoundModel.class
 pieces\FoxView.class
 pieces\FoxModel.class
