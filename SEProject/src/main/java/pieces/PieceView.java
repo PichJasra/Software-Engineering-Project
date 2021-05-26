@@ -1,3 +1,7 @@
+/**
+ * This class is the visual representation of our board and pieces
+ */
+
 package pieces;
 
 import board.*;
@@ -10,6 +14,11 @@ public abstract class PieceView {
     private FieldView fieldView;
     private ChessboardView chessboardView;
 
+    /**
+     * Get the table view and put the pieces on it
+     * @param pieceModel
+     * @param chessboardView
+     */
     PieceView(PieceModel pieceModel, ChessboardView chessboardView) {
         this.pieceModel = pieceModel;
         this.chessboardView = chessboardView;
@@ -23,7 +32,10 @@ public abstract class PieceView {
         return viewRepresentation;
     }
 
-
+    /**
+     * This describes a field in the board
+     * @param fieldModel
+     */
     void place(FieldModel fieldModel) {
         if (pieceModel.place(fieldModel)) {
             chessboardView.addPiece(this.viewRepresentation, fieldModel.getCol(), fieldModel.getRow());
@@ -33,6 +45,10 @@ public abstract class PieceView {
         }
     }
 
+    /**
+     * This is the part where we decide what happens to a tile, when the user interacts with it.
+     * @param fieldModel
+     */
     public void move(FieldModel fieldModel) {
         if (pieceModel.move(fieldModel)) {
             this.moveWithoutColorChange(fieldModel);

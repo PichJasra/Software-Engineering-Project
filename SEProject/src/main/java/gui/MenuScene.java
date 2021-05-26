@@ -1,3 +1,6 @@
+/**
+ * This is the main menu.
+ */
 package gui;
 
 import javafx.application.Platform;
@@ -53,10 +56,15 @@ class MenuScene {
         GuiUtils.setButtonHeightAndBindSizes(50, Arrays.asList(buttons), newGameButton);
         layout.getChildren().addAll(newGameButton, helpButton);
 
+        /**
+         * When we click the new game button, it takes us to the NameScene scene.
+         */
         newGameButton.setOnAction(event -> {
-            GameScene gameScene = new GameScene(this.window);
+            NameScene nameScene = new NameScene(this.window);
+            nameScene.display();
+            /*GameScene gameScene = new GameScene(this.window);
             Logger.debug("Started game ", gameScene);
-            gameScene.display();
+            gameScene.display();*/
         });
 
         helpButton.setOnAction(event -> openHelpInBrowser(helpButton));

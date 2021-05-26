@@ -1,6 +1,7 @@
 package game;
 
 import board.FieldModel;
+import javafx.scene.control.TextField;
 import pieces.HoundModel;
 import pieces.FoxModel;
 
